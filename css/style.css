@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, p{
 
 
 .leftWhyDecl{
-    width: 51%;    
+    /* width: 51%;     */
     position: relative;
     top: 15px;
 
@@ -158,11 +158,11 @@ h1, h2, h3, h4, h5, p{
     margin: 0;   
 }
 
-.leftFifth h3{
+.flexItem h3{
     font-size: 18px;
 }
 
-.leftFifth ul li{
+.flexItem ul li{
     list-style: none;
     color: #6A6A6A;
     font-size: 15px;
@@ -222,12 +222,24 @@ h1, h2, h3, h4, h5, p{
     font-weight: bold;
     text-align: center;
     color: black;
-    padding-top: 20px;
+    padding: 30px 0;
+}
+
+.centerSomeText{
+    width: 977px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .processNum{
-    width: 51%;
+    /* width: 51%; */
     height: inherit;
+}
+
+.processNum hr{
+    width: 90%;
+    margin-left: 0;
 }
 
 
@@ -266,6 +278,7 @@ h1, h2, h3, h4, h5, p{
     /* border: 1px solid red; */
     margin: 0 auto;
     display: flex;
+
 }
 
 .ninthContFirst{
@@ -281,7 +294,7 @@ h1, h2, h3, h4, h5, p{
     height: 447px;
     /* border: 1px solid yellow; */
     background-color: #FCFCFC;
-    margin-left: -5px;
+    /* margin-left: -5px; */
 
 }
 
@@ -289,7 +302,6 @@ h1, h2, h3, h4, h5, p{
     width: 315px;
     height: 447px;
     /* border: 1px solid blue; */
-    margin-left: 20px;
     background-color: #FCFCFC;
     
 }
@@ -305,14 +317,13 @@ h1, h2, h3, h4, h5, p{
     height: 517px;
     /* border: 1px dotted pink; */
     background-color: #FCFCFC;
-    margin-left: -5px;
+    /* margin-left: -5px; */
 
 }
 .eleFive{
     width: 315px;
     height: 517px;
     /* border: 1px dashed seagreen; */
-    margin-left: 20px;
     background-color: #FCFCFC;
 }
 
@@ -323,6 +334,9 @@ h1, h2, h3, h4, h5, p{
     height: 998px;
     /* border: 1px solid blue; */
     margin-left: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 
@@ -344,7 +358,7 @@ h1, h2, h3, h4, h5, p{
 
 .eleOne li::before{
     content: "\2022";
-    color: red;
+    color: #EC008C;
     font-weight: bold;
     display: inline-block;
     margin-right: 5px; 
@@ -380,7 +394,7 @@ h1, h2, h3, h4, h5, p{
 
 .eleTwo li::before{
     content: "\2022";
-    color: red;
+    color: #EC008C;
     font-weight: bold;
     display: inline-block;
     margin-right: 5px; 
@@ -414,7 +428,7 @@ h1, h2, h3, h4, h5, p{
 
 .eleFour li::before{
     content: "\2022";
-    color: red;
+    color: #EC008C;
     font-weight: bold;
     display: inline-block;
     margin-right: 5px; 
@@ -448,7 +462,7 @@ h1, h2, h3, h4, h5, p{
 
 .eleFive li::before{
     content: "\2022";
-    color: red;
+    color: #EC008C;
     font-weight: bold;
     display: inline-block;
     margin-right: 5px; 
@@ -467,7 +481,7 @@ h1, h2, h3, h4, h5, p{
 
 .eleThree{
     background-color: #FCFCFC;
-    height: inherit;
+    height: 97%;
 }
 
 .offerThree{
@@ -503,6 +517,14 @@ h1, h2, h3, h4, h5, p{
 
 .ti{
     color: black;
+    margin: 0 auto;
+}
+
+.dummyContainer{
+    width: 977px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -562,3 +584,211 @@ h1, h2, h3, h4, h5, p{
     color: #464545;
     font-size: 15px;    
 }
+
+.sideImg{
+    width: 100%;
+    height: 100%;
+}
+
+
+.flexContainer{
+    width: 977px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+.flexItem{
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+    /* border: 1px dotted blue; */
+}
+
+
+.seventhMoreData{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: -39px;
+}
+
+
+.customHr{
+    width: 75%;
+}
+
+.mainFlex{
+    width: 1039px;
+    height: 1029px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.leftFlex{
+    width: 66%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.rightFlex{
+    width: 31%;
+    height: auto;
+}
+
+.flexItems{
+    /* width: 48%;
+    height: auto; */
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
+}
+
+.mainFlex p{
+    font-size: 15px;
+    padding-left: 25px;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1029px){
+
+    .dummyContainer{
+        width: 690px;
+    }
+
+    .mainFlex{
+        width: 700px;
+    }
+
+    .leftFlex{
+        width: 49%;
+    }
+
+    .rightFlex{
+        width: 48%;
+    }
+    .eleThree{
+        height: 99%;
+    }
+
+    /* .eleFive{
+
+    } */
+
+    .resize{
+        position: relative;
+        margin-top: 1000px;    
+    }
+
+    .eleventhContainer,.tenthContainer {
+        width: 700px;
+        justify-content: space-evenly;        
+    }
+
+
+    .sideImg{
+        height: 50%;
+    }
+    .numContent p{
+        line-height: 20px;
+    }
+
+    .flexContainer{
+        width: 700px;
+    }
+
+}
+
+
+@media screen and (max-width: 699px){
+    /* body{
+        background-color: yellow;
+    } */
+
+
+    .dummyContainer{
+        width: 390px;
+        margin-left: 30px;
+    }
+
+    .mainFlex{
+        width: 400px;
+        position: relative;
+        left: -120px;
+    }
+    .leftFlex{
+        width: 100%;
+    }
+
+    .bookWrapper h2{
+        font-size: 15px;
+    }
+
+    .rightFlex{
+        width: 79%;
+        position: relative;
+        left: 15px;
+    }
+
+    .eleThree{
+        height: 99%;
+        position: relative;
+        left: -80px;
+    }
+
+    .eleFive{
+        position: relative;
+        left: -66px;
+    }
+    .eleOne{
+        position: relative;
+        left: -66px;
+    }
+
+    .eleTwo{
+        position: relative;
+        left: -66px;
+    }
+    .eleFour{
+        position: relative;
+        left: -66px;
+    }
+    .resize{
+        position: relative;
+        margin-top: 1777px;
+    }
+
+    .eleventhContainer,.tenthContainer {
+        width: 400px;
+        justify-content: space-evenly;        
+    }
+
+    .ninthContFirst{
+        width: 50%;
+    }
+    .ninthContSecond{
+        margin-left:-170px;
+    }
+    .numContent p{
+        line-height: 20px;
+    }
+
+    .flexContainer{
+        flex-direction: column-reverse;
+        margin-left: 10px;
+        /* display: flex; */
+    }
+
+}
+
+
